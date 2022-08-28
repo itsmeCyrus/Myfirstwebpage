@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(background.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .navbar{
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+
+
+        .navbar h1 {
+            color: #fff;
+            cursor: pointer;
+        }
+
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+
+        .navbar ul li::after {
+            content: '';
+            height: 3px;
+            width: 0;
+            background: red;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s;
+        }
+
+
+        .navbar ul li:hover:after {
+            width: 100%;
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            color: #fff;
+        }
+
+
+        .content h1 {
+            font-size: 70px;
+            margin-top: 80px;
+        }
+
+
+        .content p {
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-decoration: none;
+            
+        }
+
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid red;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+
+
+        .contact:hover {
+            opacity: 0.8;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+
+
+
+    <div class="banner">
+        <div class="navbar">
+            <h1>
+                Home
+            </h1>
+            <ul>
+                <li><a href="https://www.facebook.com/csanv16">Facebook</a></li>
+                <li><a href="https://www.instagram.com/cyrus.tasani/">Instagram</a></li>
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <h1>ABOUT ME</h1>
+            
+            <p>Hi, I'm Cyrus Tasani, 18 years old, Future Software Engineer, I'm from Mandaluyong City, My hobbies are watching anime, 
+               playing mobile games and computer games <br>I creating some website to practice my HTML and CSS knowledge but it's literally nonsense. 
+               <br>if you wanna no more about me can you dm me on Facebook and Instagram
+            </p>
+                <div>
+                    <button class="contact" type="button" onclick="alert('Is not available yet! DM mo nalang ako HAHAHA')">Contact</button>
+
+                </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+</body>
+</html>
